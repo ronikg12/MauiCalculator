@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NewMauiCalculator.NewPage1"
+             Title="NewPage1">
+    <VerticalStackLayout Spacing="10" Padding="15">
+        <Label 
+            Text="0"
+            FontSize="32"
+            HorizontalTextAlignment="End"
+            x:Name="resultLabel"/>
+        <Grid RowDefinitions="*, *, *, *, *" ColumnDefinitions="*, *, *, *" RowSpacing="8" ColumnSpacing="8">
+
+            <!-- Row 0 -->
+            <Button Text="C"
+                    Grid.Row="0" Grid.Column="0"
+                    BackgroundColor="#E74C3C"
+                    Clicked="OnClearClicked" />
+            <Button Text="Del"
+                    Grid.Row="0" Grid.Column="1"
+                    BackgroundColor="#F1C40F"
+                    Clicked="OnDeleteClicked" />
+            <Button Text="%"
+                    Grid.Row="0" Grid.Column="2"
+                    BackgroundColor="#3498DB"
+                    Clicked="OnPercentClicked" />
+            <Button Text="/"
+                    Grid.Row="0" Grid.Column="3"
+                    BackgroundColor="#E67E22"
+                    Clicked="OnDivideClicked" />
+
+            <!-- Row 1 -->
+            <Button Text="7"
+                    Grid.Row="1" Grid.Column="0"
+                    BackgroundColor="#2ECC71"
+                    Clicked="OnNumberClicked" />
+            <Button Text="8"
+                    Grid.Row="1" Grid.Column="1"
+                    BackgroundColor="#1ABC9C"
+                    Clicked="OnNumberClicked" />
+            <Button Text="9"
+                    Grid.Row="1" Grid.Column="2"
+                    BackgroundColor="#16A085"
+                    Clicked="OnNumberClicked" />
+            <Button Text="X"
+                    Grid.Row="1" Grid.Column="3"
+                    BackgroundColor="#D35400"
+                    Clicked="OnMultiplyClicked" />
+
+            <!-- Row 2 -->
+            <Button Text="4"
+                    Grid.Row="2" Grid.Column="0"
+                    BackgroundColor="#27AE60"
+                    Clicked="OnNumberClicked" />
+            <Button Text="5"
+                    Grid.Row="2" Grid.Column="1"
+                    BackgroundColor="#2980B9"
+                    Clicked="OnNumberClicked" />
+            <Button Text="6"
+                    Grid.Row="2" Grid.Column="2"
+                    BackgroundColor="#8E44AD"
+                    Clicked="OnNumberClicked" />
+            <Button Text="-"
+                    Grid.Row="2" Grid.Column="3"
+                    BackgroundColor="#C0392B"
+                    Clicked="OnSubtractClicked" />
+
+            <!-- Row 3 -->
+            <Button Text="1"
+                    Grid.Row="3" Grid.Column="0"
+                    BackgroundColor="#9B59B6"
+                    Clicked="OnNumberClicked" />
+            <Button Text="2"
+                    Grid.Row="3" Grid.Column="1"
+                    BackgroundColor="#34495E"
+                    Clicked="OnNumberClicked" />
+            <Button Text="3"
+                    Grid.Row="3" Grid.Column="2"
+                    BackgroundColor="#7F8C8D"
+                    Clicked="OnNumberClicked" />
+            <Button Text="+"
+                    Grid.Row="3" Grid.Column="3"
+                    BackgroundColor="#E84393"
+                    Clicked="OnAddClicked" />
+
+            <!-- Row 4 -->
+            <Button Text="( )"
+                    Grid.Row="4" Grid.Column="0"
+                    BackgroundColor="#6C5CE7"
+                    Clicked="OnParenthesisClicked" />
+            <Button Text="0"
+                    Grid.Row="4" Grid.Column="1"
+                    BackgroundColor="#00CEC9"
+                    Clicked="OnNumberClicked" />
+            <Button Text="."
+                    Grid.Row="4" Grid.Column="2"
+                    BackgroundColor="#0984E3"
+                    Clicked="OnDecimalClicked" />
+            <Button Text="="
+                    Grid.Row="4" Grid.Column="3"
+                    BackgroundColor="#00B894"
+                    Clicked="OnEqualsClicked" />
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
